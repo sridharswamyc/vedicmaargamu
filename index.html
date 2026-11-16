@@ -260,9 +260,7 @@
                     <div class="glass-card rounded-3xl p-8 relative overflow-hidden text-center shadow-xl border border-saffron-500/30">
                         <div class="absolute -top-12 -right-12 w-40 h-40 bg-saffron-500/10 rounded-full blur-2xl"></div>
                         <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-saffron-500 to-saffron-700 p-1 mb-6 shadow-md">
-                            <div class="w-full h-full rounded-full bg-cream-100 flex items-center justify-center text-saffron-600 text-5xl">
-                                <i class="fa-solid fa-user-tie"></i>
-                            </div>
+                            <img src="sridhar-swamy-portrait.webp" alt="Portrait of Sridhar Swamy Ch" class="w-full h-full rounded-full object-cover" width="120" height="120" loading="lazy">
                         </div>
                         <h3 class="heading-font text-2xl font-bold text-slate-900 mb-1">Sridhar Swamy Ch</h3>
                         <p class="text-saffron-600 text-sm font-bold mb-4">Certified Vedic Astrologer & Numerologist</p>
@@ -764,31 +762,62 @@
                                 </div>
                             </div>
 
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5" for="client-lang">Language Preference</label>
+                                <select id="client-lang" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                    <option value="Telugu">Telugu / తెలుగు</option>
+                                    <option value="English">English</option>
+                                    <option value="Both">Both / రెండు</option>
+                                </select>
+                            </div>
+
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
-                                    <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Preferred Date</label>
-                                    <input type="date" id="client-date" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                    <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Date of Birth (DD/MM/YYYY)</label>
+                                    <div class="grid grid-cols-3 gap-2" aria-label="Date of birth in day month year format">
+                                        <select id="birth-day" aria-label="Birth day" class="w-full min-w-0 bg-cream-100 border border-saffron-500/40 rounded-xl px-2 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm"><option value="">DD</option></select>
+                                        <select id="birth-month" aria-label="Birth month" class="w-full min-w-0 bg-cream-100 border border-saffron-500/40 rounded-xl px-2 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm"><option value="">MM</option></select>
+                                        <select id="birth-year" aria-label="Birth year" class="w-full min-w-0 bg-cream-100 border border-saffron-500/40 rounded-xl px-2 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm"><option value="">YYYY</option></select>
+                                    </div>
+                                    <p class="text-xs text-slate-600 mt-1">Select birth year from 2027 to 1947</p>
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Language Preference</label>
-                                    <select id="client-lang" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm">
-                                        <option value="Telugu">Telugu / తెలుగు</option>
-                                        <option value="English">English</option>
-                                        <option value="Both">Both / రెండు</option>
-                                    </select>
+                                    <label for="birth-time" class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Time of Birth</label>
+                                    <div class="relative flex items-center">
+                                        <input type="text" id="birth-time" inputmode="text" autocomplete="off" maxlength="8" placeholder="HH:MM AM/PM" aria-describedby="birth-time-help" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl pl-4 pr-14 py-3 text-sm text-slate-900 placeholder-slate-500 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                        <button type="button" id="birth-time-picker-btn" aria-expanded="false" aria-controls="birth-time-dropdown" aria-label="Select time of birth" title="Choose a time" class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg text-saffron-700 hover:bg-saffron-500/10 focus:outline-none focus:ring-2 focus:ring-saffron-600">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+                                        </button>
+                                    </div>
+                                    <div id="birth-time-dropdown" class="hidden mt-2 p-3 bg-cream-100 border border-saffron-500/40 rounded-xl shadow-lg" role="group" aria-label="Select birth time in 12-hour format">
+                                        <div class="grid grid-cols-3 gap-2">
+                                            <div><label for="birth-hour-select" class="block text-xs font-semibold text-slate-700 mb-1">Hour (12-hour)</label><select id="birth-hour-select" class="w-full min-w-0 bg-white border border-saffron-500/40 rounded-lg px-2 py-2 text-slate-900" aria-label="Birth hour"><option value="">HH</option></select></div>
+                                            <div><label for="birth-minute-select" class="block text-xs font-semibold text-slate-700 mb-1">Minute</label><select id="birth-minute-select" class="w-full min-w-0 bg-white border border-saffron-500/40 rounded-lg px-2 py-2 text-slate-900" aria-label="Birth minute"><option value="">MM</option></select></div>
+                                            <div><label for="birth-period-select" class="block text-xs font-semibold text-slate-700 mb-1">AM / PM</label><select id="birth-period-select" class="w-full min-w-0 bg-white border border-saffron-500/40 rounded-lg px-2 py-2 text-slate-900" aria-label="Birth AM or PM"><option value="AM">AM</option><option value="PM">PM</option></select></div>
+                                        </div>
+                                        <div class="flex justify-end gap-2 mt-3">
+                                            <button type="button" id="birth-time-cancel" class="rounded-lg px-3 py-2 text-sm text-slate-700 border border-slate-300">Cancel</button>
+                                            <button type="button" id="birth-time-apply" class="rounded-lg px-4 py-2 text-sm font-semibold bg-saffron-600 text-white">Set Time</button>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-slate-600 mt-1" id="birth-time-help">HH:MM AM/PM · Type manually or choose Hour, Minute and AM/PM · Local time at place of birth</p>
                                 </div>
+                            </div>
+                            <div>
+                                <label for="birth-place" class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Place of Birth</label>
+                                <input type="text" id="birth-place" maxlength="160" autocomplete="off" placeholder="City, State, Country (e.g., Jagtial, Telangana, India)" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-saffron-600 shadow-sm">
                             </div>
 
                             <div>
-                                <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Your Question / Birth Details (Optional)</label>
-                                <textarea id="client-message" rows="3" placeholder="Date of birth, time, place or specific question..." 
+                                <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Your Question / Additional Details (Optional)</label>
+                                <textarea id="client-message" rows="3" placeholder="Enter your specific question or any additional details..." 
                                           class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-saffron-600 shadow-sm"></textarea>
                             </div>
 
                             <!-- Privacy acknowledgement for WhatsApp consultation requests -->
                             <div class="rounded-xl border border-saffron-500/30 bg-cream-100 p-4 text-left">
                                 <p class="text-xs text-slate-700 leading-relaxed mb-3">
-                                    Your name, selected service, date, preferences and any birth details or questions you enter will be included in a WhatsApp message to request a consultation. Please avoid sharing details you do not wish to send. WhatsApp handles messages under its own privacy terms. Submitting a request does not confirm an appointment.
+                                    Your name, selected service, language preference, date/time/place of birth and any questions you enter will be included in a WhatsApp message to request a consultation. Please avoid sharing details you do not wish to send. WhatsApp handles messages under its own privacy terms. Submitting a request does not confirm an appointment.
                                 </p>
                                 <label for="booking-privacy" class="flex items-start gap-3 cursor-pointer text-xs text-slate-800 leading-relaxed">
                                     <input id="booking-privacy" type="checkbox" required class="mt-0.5 h-4 w-4 shrink-0 accent-orange-600" aria-required="true">
@@ -836,12 +865,109 @@
 
     <!-- Interactive JavaScript with XSS Sanitization -->
     <script>
-        const bookingDateInput = document.getElementById('client-date');
-        if (bookingDateInput) {
-            const today = new Date();
-            const localDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
-            bookingDateInput.min = localDate;
+        // Explicit DD/MM/YYYY selectors avoid browser-dependent date formatting and calendar bugs.
+        const dateToday = new Date();
+        dateToday.setHours(0, 0, 0, 0);
+        const currentYear = dateToday.getFullYear();
+        function addOptions(id, start, end, reverse = false) {
+            const control = document.getElementById(id);
+            const step = reverse ? -1 : 1;
+            for (let n = start; reverse ? n >= end : n <= end; n += step) {
+                const option = document.createElement('option');
+                option.value = String(n).padStart(2, '0');
+                option.textContent = String(n).padStart(2, '0');
+                control.appendChild(option);
+            }
         }
+        addOptions('birth-day', 1, 31);
+        addOptions('birth-month', 1, 12);
+        addOptions('birth-year', 2027, 1947, true);
+
+        function getDateFields(prefix, required) {
+            const day = document.getElementById(`${prefix}-day`).value;
+            const month = document.getElementById(`${prefix}-month`).value;
+            const year = document.getElementById(`${prefix}-year`).value;
+            if (!day && !month && !year && !required) return { valid: true, value: '', date: null };
+            if (!day || !month || !year) return { valid: false, error: 'Please select the full date (DD/MM/YYYY).' };
+            const d = Number(day), m = Number(month), y = Number(year);
+            const parsed = new Date(y, m - 1, d);
+            if (parsed.getFullYear() !== y || parsed.getMonth() !== m - 1 || parsed.getDate() !== d) {
+                return { valid: false, error: 'Please select a valid date.' };
+            }
+            return { valid: true, value: `${day}/${month}/${year}`, date: parsed };
+        }
+
+        // Manual HH:MM AM/PM input plus a browser-independent 12-hour dropdown.
+        const birthTimeText = document.getElementById('birth-time');
+        const birthTimePickerButton = document.getElementById('birth-time-picker-btn');
+        const birthTimeDropdown = document.getElementById('birth-time-dropdown');
+        const birthHour = document.getElementById('birth-hour-select');
+        const birthMinute = document.getElementById('birth-minute-select');
+        const birthPeriod = document.getElementById('birth-period-select');
+        for (let h = 1; h <= 12; h++) {
+            const v = String(h).padStart(2, '0');
+            birthHour.add(new Option(v, v));
+        }
+        for (let m = 0; m <= 59; m++) {
+            const v = String(m).padStart(2, '0');
+            birthMinute.add(new Option(v, v));
+        }
+        function parseBirthTime(value) {
+            const match = value.trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+            if (!match) return null;
+            const hour = Number(match[1]);
+            const minute = Number(match[2]);
+            if (hour < 1 || hour > 12 || minute > 59) return null;
+            const period = match[3].toUpperCase();
+            return {display: `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')} ${period}`};
+        }
+        function closeBirthTimeDropdown() {
+            birthTimeDropdown.classList.add('hidden');
+            birthTimePickerButton.setAttribute('aria-expanded', 'false');
+        }
+        birthTimeText.addEventListener('blur', () => {
+            const time = parseBirthTime(birthTimeText.value);
+            if (time) birthTimeText.value = time.display;
+        });
+        birthTimePickerButton.addEventListener('click', () => {
+            const isHidden = birthTimeDropdown.classList.contains('hidden');
+            if (!isHidden) { closeBirthTimeDropdown(); return; }
+            const parsed = parseBirthTime(birthTimeText.value);
+            if (parsed) {
+                const [, hh, mm, ap] = parsed.display.match(/^(\d{2}):(\d{2}) (AM|PM)$/);
+                birthHour.value = hh;
+                birthMinute.value = mm;
+                birthPeriod.value = ap;
+            } else {
+                birthHour.value = '';
+                birthMinute.value = '';
+                birthPeriod.value = 'AM';
+            }
+            birthTimeDropdown.classList.remove('hidden');
+            birthTimePickerButton.setAttribute('aria-expanded', 'true');
+            birthHour.focus();
+        });
+        document.getElementById('birth-time-apply').addEventListener('click', () => {
+            if (!birthHour.value || !birthMinute.value) {
+                showToast('Please select both hour and minute.');
+                (!birthHour.value ? birthHour : birthMinute).focus();
+                return;
+            }
+            birthTimeText.value = `${birthHour.value}:${birthMinute.value} ${birthPeriod.value}`;
+            closeBirthTimeDropdown();
+            birthTimeText.focus();
+        });
+        document.getElementById('birth-time-cancel').addEventListener('click', () => {
+            closeBirthTimeDropdown();
+            birthTimePickerButton.focus();
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !birthTimeDropdown.classList.contains('hidden')) {
+                closeBirthTimeDropdown();
+                birthTimePickerButton.focus();
+            }
+        });
+
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuBtn.addEventListener('click', () => {
@@ -900,20 +1026,40 @@
             const rawService = document.getElementById('service-select').value;
             const rawName = document.getElementById('client-name').value;
             const rawMode = document.getElementById('consultation-mode').value;
-            const rawDate = document.getElementById('client-date').value;
+            const birth = getDateFields('birth', false);
+            if (!birth.valid) {
+                document.getElementById('birth-day').focus();
+                showToast(birth.error);
+                return;
+            }
+            const rawBirthDate = birth.value;
+            const rawBirthTime = birthTimeText.value.trim();
+            const parsedBirthTime = rawBirthTime ? parseBirthTime(rawBirthTime) : null;
+            if (rawBirthTime && !parsedBirthTime) {
+                birthTimeText.focus();
+                showToast('Enter time as HH:MM AM/PM, for example 09:30 AM.');
+                return;
+            }
+            const rawBirthPlace = document.getElementById('birth-place').value.trim();
             const rawLang = document.getElementById('client-lang').value;
             const rawMsg = document.getElementById('client-message').value;
 
             const service = sanitizeInput(rawService);
             const name = sanitizeInput(rawName);
             const mode = sanitizeInput(rawMode);
-            const date = sanitizeInput(rawDate);
+            const birthDate = sanitizeInput(rawBirthDate);
+            const birthTime = sanitizeInput(parsedBirthTime ? parsedBirthTime.display : '');
+            const birthPlace = sanitizeInput(rawBirthPlace);
             const lang = sanitizeInput(rawLang);
             const msg = sanitizeInput(rawMsg);
 
             const whatsappNumber = "919441931386";
-            let text = `Namaste Sridhar Swamy Ji,%0A%0AI would like to book a consultation.%0A%0A*Service:* ${encodeURIComponent(service)}%0A*Name:* ${encodeURIComponent(name)}%0A*Mode:* ${encodeURIComponent(mode)}%0A*Date:* ${encodeURIComponent(date || 'Not specified')}%0A*Language:* ${encodeURIComponent(lang)}`;
+            let text = `Namaste Sridhar Swamy Ji,%0A%0AI would like to book a consultation.%0A%0A*Service:* ${encodeURIComponent(service)}%0A*Name:* ${encodeURIComponent(name)}%0A*Mode:* ${encodeURIComponent(mode)}%0A*Language:* ${encodeURIComponent(lang)}`;
             
+            if (birthDate) text += `%0A*Date of Birth:* ${encodeURIComponent(birthDate)}`;
+            if (birthTime) text += `%0A*Time of Birth:* ${encodeURIComponent(birthTime)}`;
+            if (birthPlace) text += `%0A*Place of Birth:* ${encodeURIComponent(birthPlace)}`;
+
             if (msg.trim() !== "") {
                 text += `%0A*Details/Question:* ${encodeURIComponent(msg)}`;
             }
