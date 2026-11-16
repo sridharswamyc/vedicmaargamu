@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sridhar Swamy Ch | Certified Vedic Astrologer & Numerologist</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: {
+                            50: '#fff8f0',
+                            100: '#ffecd1',
+                            500: '#ff9933',
+                            600: '#e67e22',
+                            700: '#cc6600',
+                        },
+                        cream: {
+                            50: '#fff9ec',
+                            100: '#fff5e3',
+                            200: '#ffefd1',
+                            300: '#ffe5be',
+                        },
+                        slate: {
+                            900: '#1a1a1a',
+                            800: '#2d2d2d',
+                            700: '#4a4a4a',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'Playfair Display', 'serif'],
+                        sans: ['Inter', 'Poppins', 'sans-serif'],
+                        telugu: ['Nirmala UI', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #ffefd1;
+            color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .heading-font {
+            font-family: 'Cinzel', serif;
+        }
+        .telugu-font {
+            font-family: 'Nirmala UI', 'Inter', sans-serif;
+        }
+        .saffron-gradient-text {
+            background: linear-gradient(135deg, #cc6600 0%, #ff9933 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 247, 230, 0.94);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 153, 51, 0.25);
+            box-shadow: 0 10px 30px -10px rgba(255, 153, 51, 0.12);
+        }
+        .glass-card:hover {
+            border-color: rgba(255, 153, 51, 0.6);
+            box-shadow: 0 15px 35px -10px rgba(255, 153, 51, 0.22);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffefd1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff9933;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #cc6600;
+        }
+    </style>
+</head>
+<body class="bg-cream-200 text-slate-900 antialiased selection:bg-saffron-500 selection:text-white">
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 ease-out bg-slate-900 border border-saffron-500 text-cream-200 px-6 py-4 rounded-xl shadow-2xl flex items-center space-x-3">
+        <i class="fa-solid fa-om text-saffron-500 text-xl animate-spin"></i>
+        <div>
+            <h4 class="font-bold heading-font text-sm text-saffron-500">Sacred Notice</h4>
+            <p id="toast-message" class="text-xs text-slate-200">Processing consultation request...</p>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/919441931386?text=Namaste%20Sridhar%20Swamy%20Ji,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" 
+       class="fixed bottom-6 left-6 z-40 bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:scale-110 transition-all duration-300 animate-bounce" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Top Info & Social Bar -->
+    <div class="bg-slate-900 text-cream-200 py-2.5 text-xs border-b border-saffron-500/30">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-graduation-cap text-saffron-500 mr-1.5"></i> SPRTU Hyderabad Certified</span>
+                <span class="hidden md:inline">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-saffron-500 mr-1.5"></i> Jagtial & Hyderabad</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-phone text-saffron-500 mr-1.5"></i> +91 94419 31386</span>
+                <div class="flex items-center space-x-3 pl-2 border-l border-saffron-500/30">
+                    <a href="https://www.instagram.com/sridharswamychinthamani/" target="_blank" rel="noopener noreferrer" class="hover:text-saffron-500 transition-colors" title="Instagram (Sridhar Swamy)"><i class="fa-brands fa-instagram text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-cream-100/95 backdrop-blur-md border-b border-saffron-500/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo & Brand -->
+            <a href="#home" class="flex items-center space-x-3 group">
+                <img src="vedic-maargam-logo.webp" alt="VEDIC MAARGAM logo" class="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-contain bg-cream-100 shadow-sm border border-saffron-500/30 group-hover:scale-105 transition-transform" width="64" height="64">
+                <div>
+                    <h1 class="heading-font font-bold text-base sm:text-lg text-slate-900 tracking-wider">Sridhar Swamy Ch</h1>
+                    <p class="text-[10px] text-saffron-600 font-bold tracking-widest uppercase">Certified Vedic Astrologer</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-sm font-semibold text-slate-800 hover:text-saffron-600 transition-colors">Home</a>
+                <a href="#about" class="text-sm font-semibold text-slate-800 hover:text-saffron-600 transition-colors">About / గురించి</a>
+                <a href="#services" class="text-sm font-semibold text-slate-800 hover:text-saffron-600 transition-colors">Services / సేవలు</a>
+                <a href="#divine" class="text-sm font-semibold text-slate-800 hover:text-saffron-600 transition-colors">Divine / శ్లోకం</a>
+                <a href="#contact" class="text-sm font-semibold text-slate-800 hover:text-saffron-600 transition-colors">Contact / సంప్రదించండి</a>
+            </nav>
+
+            <!-- WhatsApp Quick Button -->
+            <div class="hidden sm:flex items-center">
+                <a href="https://wa.me/919441931386?text=Namaste%20Sridhar%20Swamy%20Ji,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" 
+                   class="bg-gradient-to-r from-saffron-500 to-saffron-600 hover:from-saffron-600 hover:to-saffron-700 text-white font-bold px-5 py-2.5 rounded-full text-sm shadow-md hover:shadow-saffron-500/30 transition-all duration-300 flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-saffron-600 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-cream-100 border-b border-saffron-500/20 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#home" class="block text-sm text-slate-900 hover:text-saffron-600 py-1 mobile-link font-medium">Home</a>
+            <a href="#about" class="block text-sm text-slate-900 hover:text-saffron-600 py-1 mobile-link font-medium">About / గురించి</a>
+            <a href="#services" class="block text-sm text-slate-900 hover:text-saffron-600 py-1 mobile-link font-medium">Services / సేవలు</a>
+            <a href="#divine" class="block text-sm text-slate-900 hover:text-saffron-600 py-1 mobile-link font-medium">Divine / శ్లోకం</a>
+            <a href="#contact" class="block text-sm text-slate-900 hover:text-saffron-600 py-1 mobile-link font-medium">Contact / సంప్రదించండి</a>
+            <div class="pt-2">
+                <a href="https://wa.me/919441931386?text=Namaste%20Sridhar%20Swamy%20Ji,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" 
+                   class="w-full bg-saffron-500 text-white font-bold px-4 py-2.5 rounded-xl text-center flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp Now</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-b from-cream-100 via-cream-100 to-cream-100 border-b border-saffron-500/20">
+        <div class="absolute top-12 left-12 text-saffron-500/10 text-9xl pointer-events-none select-none heading-font">ॐ</div>
+        <div class="absolute bottom-12 right-12 text-saffron-500/10 text-9xl pointer-events-none select-none heading-font">☸</div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 bg-cream-50 border border-saffron-500/40 px-5 py-2 rounded-full mb-6 shadow-sm">
+                <i class="fa-solid fa-certificate text-saffron-600"></i>
+                <span class="text-xs uppercase tracking-widest text-slate-900 font-bold">Certified Vedic Astrologer & Numerologist</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="heading-font text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-wide mb-4">
+                Unlock Your <span class="saffron-gradient-text">Destiny</span>
+            </h1>
+            <h2 class="telugu-font text-2xl sm:text-3xl text-saffron-600 font-bold mb-6">
+                మీ భవిష్యత్తును తెలుసుకోండి
+            </h2>
+
+            <!-- Subtitle Credentials -->
+            <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-700 leading-relaxed mb-8 font-medium">
+                Authentic Vedic Jyotish • Vedic Numerology • Kundali Vishleshana • Dosha Pariharas • Muhurtham • Name Analysis • Business Numerology • Gemstone Guidance
+                <br><span class="text-sm text-saffron-600 font-bold mt-2 block telugu-font">వేద జ్యోతిష్యం • భారతీయ సంఖ్యాశాస్త్రం • కుండలి విశ్లేషణ • దోష పరిహారాలు • ముహూర్తం • నామ విశ్లేషణ</span>
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto bg-gradient-to-r from-saffron-500 to-saffron-600 hover:from-saffron-600 hover:to-saffron-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-saffron-500/30 transition-all duration-300 flex items-center justify-center space-x-3 text-base">
+                    <i class="fa-solid fa-calendar-check text-xl"></i>
+                    <span>Book Consultation / సంప్రదించండి</span>
+                </a>
+                <a href="https://wa.me/919441931386?text=Namaste%20Sridhar%20Swamy%20Ji,%20I%20want%20to%20consult%20regarding%20my%20horoscope." target="_blank" 
+                   class="w-full sm:w-auto bg-cream-100 hover:bg-cream-100 text-saffron-600 border border-saffron-500/50 font-bold px-8 py-4 rounded-xl shadow-sm transition-all duration-300 flex items-center justify-center space-x-3 text-base">
+                    <i class="fa-brands fa-whatsapp text-xl text-green-600"></i>
+                    <span>WhatsApp 9441931386</span>
+                </a>
+            </div>
+
+            <!-- Quick Fee Note -->
+            <div class="mt-8 text-xs text-slate-700 flex items-center justify-center space-x-2 font-medium">
+                <i class="fa-solid fa-circle-info text-saffron-600"></i>
+                <span>Consultation Fee: Available on Request • Online & In-person (Jagtial & Hyderabad)</span>
+            </div>
+        </div>
+
+        <!-- Moon & Sacred Art Bar -->
+        <div class="mt-16 border-t border-b border-saffron-500/20 bg-cream-50 py-4 shadow-inner">
+            <div class="max-w-5xl mx-auto px-4 flex justify-around items-center text-saffron-600 text-lg sm:text-2xl">
+                <i class="fa-solid fa-om" title="Om"></i>
+                <i class="fa-solid fa-sun" title="Sun"></i>
+                <i class="fa-solid fa-star-of-life text-saffron-500" title="Celestial Star" style="filter: drop-shadow(0 0 6px rgba(255, 153, 51, 0.6));"></i>
+                <i class="fa-solid fa-moon" title="Moon"></i>
+                <i class="fa-solid fa-dharmachakra" title="Dharma Wheel"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sanskrit Shloka Section -->
+    <section id="divine" class="py-16 bg-cream-100 border-b border-saffron-500/20 relative shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-14 h-14 mx-auto rounded-full bg-saffron-50 border border-saffron-500/40 flex items-center justify-center text-saffron-600 mb-6 shadow-sm">
+                <i class="fa-solid fa-om text-2xl"></i>
+            </div>
+            <h3 class="heading-font text-xs uppercase tracking-widest text-saffron-600 font-bold mb-3">జ్యోతిష శాస్త్రం • Divine Wisdom</h3>
+            <blockquote class="telugu-font text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 leading-relaxed mb-6">
+                "అప్రత్యక్షాణి శాస్త్రాణి వివాదస్తేషు కేవలమ్ |<br class="hidden sm:inline">
+                ప్రత్యక్షం జ్యోతిషం శాస్త్రం చంద్రాకౌ యత్ర సాక్షిణౌ ||"
+            </blockquote>
+            <p class="text-sm sm:text-base text-slate-700 italic max-w-2xl mx-auto leading-relaxed">
+                "Unlike other sciences whose truths are debated in abstraction, the science of Jyotish is directly witnessable, with the Sun and the Moon serving as eternal cosmic witnesses."
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-cream-200 relative overflow-hidden border-b border-saffron-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column: Profile Card Graphic -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-3xl p-8 relative overflow-hidden text-center shadow-xl border border-saffron-500/30">
+                        <div class="absolute -top-12 -right-12 w-40 h-40 bg-saffron-500/10 rounded-full blur-2xl"></div>
+                        <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-saffron-500 to-saffron-700 p-1 mb-6 shadow-md">
+                            <div class="w-full h-full rounded-full bg-cream-100 flex items-center justify-center text-saffron-600 text-5xl">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold text-slate-900 mb-1">Sridhar Swamy Ch</h3>
+                        <p class="text-saffron-600 text-sm font-bold mb-4">Certified Vedic Astrologer & Numerologist</p>
+                        
+                        <div class="bg-cream-100 rounded-2xl p-4 border border-saffron-500/20 text-left space-y-2 mb-6 text-xs text-slate-800 shadow-sm">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-graduation-cap text-saffron-600 w-5"></i>
+                                <span class="font-semibold">సురవరం ప్రతాపరెడ్డి తెలుగు యూనివర్సిటీ, హైదరాబాద్ (SPRTU)</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-location-dot text-saffron-600 w-5"></i>
+                                <span class="font-semibold">Jagtial & Hyderabad (Online & In-person)</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-language text-saffron-600 w-5"></i>
+                                <span class="font-semibold">English & Telugu Bilingual Consultations</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/919441931386?text=Namaste%20Sridhar%20Swamy%20Ji,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" 
+                           class="inline-flex items-center justify-center space-x-2 w-full bg-saffron-500 hover:bg-saffron-600 text-white font-bold py-3 rounded-xl transition-all shadow-md">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Connect on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: About Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-saffron-600 font-bold text-xs uppercase tracking-widest block mb-2"><i class="fa-solid fa-sun mr-1"></i> About Me / నా గురించి</span>
+                        <h2 class="heading-font text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+                            Guiding Your Life Path Through Ancient Wisdom
+                        </h2>
+                    </div>
+
+                    <div class="space-y-4 text-slate-800 text-base leading-relaxed">
+                        <p class="font-medium">
+                            I am a certified astrologer from <strong class="text-saffron-600">సురవరం ప్రతాపరెడ్డి తెలుగు యూనివర్సిటీ, హైదరాబాద్ (SPRTU Hyderabad)</strong>. I offer authentic Vedic Jyotish and Numerology consultations for Kundali analysis, Dosha remedies, Muhurtham for marriage, Griha Pravesh, business and other important events, and personalized gemstone suggestions.
+                        </p>
+                        <div class="telugu-font text-slate-900 text-sm bg-cream-100 p-5 rounded-2xl border border-saffron-500/30 shadow-sm leading-relaxed">
+                            <strong class="text-saffron-600 block mb-1">తెలుగు వివరణ:</strong>
+                            నేను సురవరం ప్రతాపరెడ్డి తెలుగు యూనివర్సిటీ, హైదరాబాద్ నుండి సర్టిఫైడ్ జ్యోతిష్యుడిని. కుండలి విశ్లేషణ, దోష నివారణలు, వివాహ ముహూర్తాలు, గృహ ప్రవేశం, వ్యాపార ప్రారంభం మరియు ఇతర ముఖ్యమైన కార్యక్రమాల కోసం ప్రామాణికమైన వేద జ్యోతిష్య సంప్రదింపులు అందిస్తాను.
+                        </div>
+                        <p class="font-medium">
+                            My numerology services include <strong class="text-saffron-600">Name Analysis & Corrections, Business & Brand Numerology, Mobile & Vehicle Number Numerology, Lo Shu Grid, Vedic Grid Analysis</strong> and Compatibility Reports. I provide personalized consultations and traditional guidance to help individuals make informed decisions in their personal, professional, and spiritual journeys.
+                        </p>
+                        <div class="telugu-font text-slate-900 text-sm bg-cream-100 p-5 rounded-2xl border border-saffron-500/30 shadow-sm leading-relaxed">
+                            <strong class="text-saffron-600 block mb-1">సంఖ్యాశాస్త్ర సేవలు:</strong>
+                            అలాగే పేరు విశ్లేషణ మరియు సవరణలు, వ్యాపారం మరియు బ్రాండ్ సంఖ్యాశాస్త్రం, మొబైల్ మరియు వాహన నంబర్ సంఖ్యాశాస్త్రం, లో షు గ్రిడ్, వేదిక్ గ్రిడ్ విశ్లేషణ మరియు అనుకూలత నివేదికలు అందిస్తాను. జగిత్యాల మరియు హైదరాబాద్‌లో ఆన్‌లైన్ మరియు వ్యక్తిగత సంప్రదింపులు అందుబాటులో ఉన్నాయి.
+                        </div>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
+                        <div class="bg-cream-100 border border-saffron-500/25 p-4 rounded-xl text-center shadow-sm">
+                            <i class="fa-solid fa-award text-saffron-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-sm text-slate-900">SPRTU Certified</h4>
+                            <p class="text-[11px] text-slate-600">Hyderabad University</p>
+                        </div>
+                        <div class="bg-cream-100 border border-saffron-500/25 p-4 rounded-xl text-center shadow-sm">
+                            <i class="fa-solid fa-users text-saffron-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-sm text-slate-900">Online & In-person</h4>
+                            <p class="text-[11px] text-slate-600">Jagtial & Hyderabad</p>
+                        </div>
+                        <div class="bg-cream-100 border border-saffron-500/25 p-4 rounded-xl text-center col-span-2 sm:col-span-1 shadow-sm">
+                            <i class="fa-solid fa-language text-saffron-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-sm text-slate-900">Bilingual Support</h4>
+                            <p class="text-[11px] text-slate-600">English & Telugu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section class="py-20 bg-cream-100 border-b border-saffron-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-saffron-600 font-bold text-xs uppercase tracking-widest"><i class="fa-solid fa-shield-halved mr-1"></i> Excellence & Trust</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-slate-900 mt-2 mb-3">Why Choose Me? / నన్ను ఎందుకు సంప్రదించాలి?</h2>
+                <p class="text-slate-700 text-sm font-medium">Rooted in ancient Vedic scriptures and delivered with practical clarity for modern life.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-500/40 flex items-center justify-center text-saffron-600 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book-atlas"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-slate-900 mb-2">Authentic Vedic Jyotish</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-medium">Traditional birth chart analysis based on classical Vedic astrology principles and precise planetary calculations.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-500/40 flex items-center justify-center text-saffron-600 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-ring"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-slate-900 mb-2">Shubhakaryam Guidance</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-medium">Auspicious muhurthams for marriage, Griha Pravesh, business inauguration, and other sacred life milestones.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-500/40 flex items-center justify-center text-saffron-600 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-slate-900 mb-2">Comprehensive Numerology</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-medium">In-depth name, date of birth, business brand name, mobile number, and vehicle registration number analysis.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-500/40 flex items-center justify-center text-saffron-600 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-slate-900 mb-2">Practical Remedies</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-medium">Traditional Dosha Pariharas (Mangal, Kaal Sarp, Pitru) and personalized gemstone recommendations for optimal well-being.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-500/40 flex items-center justify-center text-saffron-600 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-slate-900 mb-2">Personalized Guidance</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-medium">One-on-one consultations with clear, compassionate explanations and practical recommendations tailored for you.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-500/40 flex items-center justify-center text-saffron-600 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-slate-900 mb-2">Bilingual Support</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-medium">Consultations and detailed reports provided comfortably in both English and Telugu languages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-cream-200 relative border-b border-saffron-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-saffron-600 font-bold text-xs uppercase tracking-widest"><i class="fa-solid fa-sun mr-1"></i> Professional Offerings</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-slate-900 mt-2 mb-3">My Services / నా సేవలు</h2>
+                <p class="text-slate-700 text-sm font-medium">Choose from our specialized Vedic astrology and numerology consultation packages.</p>
+                
+                <!-- Service Category Toggles -->
+                <div class="flex justify-center mt-8 space-x-4">
+                    <button onclick="switchTab('astrology')" id="btn-astrology" class="px-6 py-2.5 rounded-xl font-bold text-sm bg-saffron-500 text-white transition-all shadow-md">
+                        <i class="fa-solid fa-sun mr-2"></i> Vedic Astrology / జ్యోతిష్యం
+                    </button>
+                    <button onclick="switchTab('numerology')" id="btn-numerology" class="px-6 py-2.5 rounded-xl font-bold text-sm bg-cream-100 text-slate-900 border border-saffron-500/40 hover:bg-cream-100 transition-all shadow-sm">
+                        <i class="fa-solid fa-hashtag mr-2"></i> Vedic Numerology / సంఖ్యాశాస్త్రం
+                    </button>
+                </div>
+            </div>
+
+            <!-- Astrology Tab Content -->
+            <div id="tab-astrology" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Item 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Kundali Vishleshana</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">కుండలి విశ్లేషణ</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Complete birth chart analysis, planetary dashas, career, marriage, and life path guidance.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Kundali Vishleshana')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Dosha Pariharas</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">దోష పరిహారాలు</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Traditional guidance for Mangal Dosha, Kaal Sarp Dosha, Pitru Dosha, and other planetary afflictions.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Dosha Pariharas')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Muhurtham</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">ముహూర్తం</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Auspicious timings for marriage, Griha Pravesh, business inauguration, and other Shubhakaryams.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Muhurtham')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Gemstone Suggestion</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">రత్న సూచన</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Personalized gemstone recommendations based on horoscope analysis to strengthen benefic planets.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Gemstone Suggestion')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Item 5 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Marriage Compatibility</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">వివాహ సరిపోలిక</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Kundali matching, Guna Milan, and detailed marriage compatibility analysis for harmonious relationships.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Marriage Compatibility')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Item 6 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-comments-dollar"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">General Consultation</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">సాధారణ సంప్రదింపులు</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Personalized astrological guidance and answers for all your life-related questions and dilemmas.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('General Astrology Consultation')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Numerology Tab Content -->
+            <div id="tab-numerology" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Numerology Item 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-signature"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Name Analysis & Corrections</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">పేరు విశ్లేషణ మరియు సవరణలు</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Analyze personal names and suggest numerology-based name variations for success and harmony.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Name Analysis & Corrections')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Numerology Item 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Business & Brand Numerology</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">వ్యాపార మరియు బ్రాండ్ సంఖ్యాశాస్త్రం</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Numerological analysis and spelling optimization for business names, company names, and brand names.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Business & Brand Numerology')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Numerology Item 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Mobile Number Numerology</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">మొబైల్ నంబర్ సంఖ్యాశాస్త్రం</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Numerological analysis of mobile numbers to ensure positive energy flow and professional luck.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Mobile Number Numerology')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Numerology Item 4 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Vehicle Number Numerology</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">వాహన నంబర్ సంఖ్యాశాస్త్రం</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Numerological compatibility analysis of vehicle registration numbers for safe and auspicious journeys.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Vehicle Number Numerology')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Numerology Item 5 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-table-cells"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Lo Shu Grid Analysis</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">లో షు గ్రిడ్ విశ్లేషణ</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Understand number patterns, strengths, and missing numbers through Lo Shu Grid analysis.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Lo Shu Grid Analysis')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+
+                <!-- Numerology Item 6 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 text-lg mb-4 shadow-sm">
+                            <i class="fa-solid fa-star-of-david"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-slate-900 mb-1">Vedic Grid Analysis</h3>
+                        <p class="text-xs text-saffron-600 font-bold mb-3 telugu-font">వేదిక్ గ్రిడ్ విశ్లేషణ</p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-6 font-medium">Comprehensive numerological analysis based on ancient Vedic number principles and planetary associations.</p>
+                    </div>
+                    <button onclick="selectServiceForBooking('Vedic Grid Analysis')" class="w-full bg-cream-100 hover:bg-saffron-500 hover:text-white text-saffron-600 font-bold py-2.5 rounded-xl border border-saffron-500/40 transition-all text-sm flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Book This Service</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Short astrology disclaimer with full policy link -->
+    <section aria-label="Astrology disclaimer" class="bg-cream-100 border-y border-saffron-500/20 py-5">
+        <div class="max-w-5xl mx-auto px-4 text-center text-xs sm:text-sm text-slate-700 leading-relaxed">
+            <i class="fa-solid fa-circle-info text-saffron-600 mr-1" aria-hidden="true"></i>
+            <strong>Important:</strong> Astrology and numerology consultations offer traditional, interpretive guidance; results are not guaranteed and do not replace medical, legal, mental health or financial professional advice.
+            <a href="disclaimer.html" class="font-bold text-saffron-700 underline ml-1">Read full disclaimer</a>
+        </div>
+    </section>
+
+    <!-- Divine Blessings Banner -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-saffron-500/30 text-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-saffron-500/20 via-transparent to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <i class="fa-solid fa-sun text-saffron-500 text-4xl mb-4 animate-pulse"></i>
+            <h3 class="heading-font text-2xl sm:text-3xl font-bold mb-2 text-saffron-400">Divine Blessings / దైవీయ ఆశీర్వాదాలు</h3>
+            <p class="text-cream-200 text-base italic font-medium">
+                "May divine blessings bring peace, prosperity, wisdom, and positivity into everyone's life."
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-20 bg-cream-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Left: Contact Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-saffron-600 font-bold text-xs uppercase tracking-widest"><i class="fa-solid fa-address-book mr-1"></i> Get in Touch</span>
+                        <h2 class="heading-font text-3xl font-bold text-slate-900 mt-2 mb-3">Contact & Book Consultation</h2>
+                        <p class="text-slate-700 text-sm font-medium">సంప్రదించండి – మీ సంప్రదింపును బుక్ చేసుకోండి</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 shrink-0">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">Sridhar Swamy Ch</h4>
+                                <p class="text-xs text-saffron-600 font-semibold">Certified Vedic Astrologer | Vedic Numerologist</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Phone / WhatsApp</h4>
+                                <a href="tel:9441931386" class="text-sm text-saffron-600 font-bold hover:underline">9441931386</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Consultation Locations</h4>
+                                <p class="text-sm text-slate-700 font-medium">Jagtial & Hyderabad (Online & In-person)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Timings</h4>
+                                <p class="text-sm text-slate-700 font-medium">Morning 10:00 AM – 2:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-saffron-50 border border-saffron-500/30 flex items-center justify-center text-saffron-600 shrink-0">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Languages & Fee</h4>
+                                <p class="text-sm text-slate-700 font-medium">English & Telugu • Fee: Available on Request</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="pt-4 border-t border-saffron-500/20 flex flex-wrap items-center gap-3">
+                            <span class="text-xs font-bold text-slate-900">Follow:</span>
+                            <a href="https://www.instagram.com/sridharswamychinthamani/" target="_blank" class="px-2.5 py-1 rounded-lg bg-saffron-50 border border-saffron-500/30 text-saffron-600 hover:bg-saffron-500 hover:text-white transition-all text-xs font-semibold flex items-center space-x-1"><i class="fa-brands fa-instagram"></i><span>Sridhar Swamy</span></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive WhatsApp Booking Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 rounded-3xl shadow-xl relative border border-saffron-500/30 bg-cream-100">
+                        <div class="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-saffron-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                            Instant WhatsApp Booking
+                        </div>
+
+                        <h3 class="heading-font text-2xl font-bold text-slate-900 mb-2">Book Your Consultation</h3>
+                        <p class="text-xs text-slate-700 mb-6 font-medium">Select your required service and send your details directly via WhatsApp.</p>
+
+                        <form id="booking-form" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Select Service</label>
+                                <select id="service-select" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                    <option value="Kundali Vishleshana">Kundali Vishleshana / కుండలి విశ్లేషణ</option>
+                                    <option value="Dosha Pariharas">Dosha Pariharas / దోష పరిహారాలు</option>
+                                    <option value="Muhurtham">Muhurtham / ముహూర్తం</option>
+                                    <option value="Gemstone Suggestion">Gemstone Suggestion / రత్న సూచన</option>
+                                    <option value="Marriage Compatibility">Marriage Compatibility / వివాహ సరిపోలిక</option>
+                                    <option value="General Astrology Consultation">General Astrology Consultation / సాధారణ సంప్రదింపులు</option>
+                                    <option value="Name Analysis & Corrections">Name Analysis & Corrections / పేరు విశ్లేషణ మరియు సవరణలు</option>
+                                    <option value="Business & Brand Numerology">Business & Brand Numerology / వ్యాపార మరియు బ్రాండ్ సంఖ్యాశాస్త్రం</option>
+                                    <option value="Mobile Number Numerology">Mobile Number Numerology / మొబైల్ నంబర్ సంఖ్యాశాస్త్రం</option>
+                                    <option value="Vehicle Number Numerology">Vehicle Number Numerology / వాహన నంబర్ సంఖ్యాశాస్త్రం</option>
+                                    <option value="Lo Shu Grid Analysis">Lo Shu Grid Analysis / లో షు గ్రిడ్ విశ్లేషణ</option>
+                                    <option value="Vedic Grid Analysis">Vedic Grid Analysis / వేదిక్ గ్రిడ్ విశ్లేషణ</option>
+                                    <option value="Numerology Compatibility Report">Numerology Compatibility Report / సంఖ్యాశాస్త్ర అనుకూలత నివేదిక</option>
+                                </select>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Your Full Name</label>
+                                    <input type="text" id="client-name" required placeholder="Enter your full name" 
+                                           class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Consultation Mode</label>
+                                    <select id="consultation-mode" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                        <option value="Online (WhatsApp / Phone)">Online (WhatsApp / Phone)</option>
+                                        <option value="In-person at Jagtial">In-person at Jagtial</option>
+                                        <option value="In-person at Hyderabad">In-person at Hyderabad</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Preferred Date</label>
+                                    <input type="date" id="client-date" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Language Preference</label>
+                                    <select id="client-lang" class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-saffron-600 shadow-sm">
+                                        <option value="Telugu">Telugu / తెలుగు</option>
+                                        <option value="English">English</option>
+                                        <option value="Both">Both / రెండు</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-saffron-700 mb-1.5">Your Question / Birth Details (Optional)</label>
+                                <textarea id="client-message" rows="3" placeholder="Date of birth, time, place or specific question..." 
+                                          class="w-full bg-cream-100 border border-saffron-500/40 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-saffron-600 shadow-sm"></textarea>
+                            </div>
+
+                            <!-- Privacy acknowledgement for WhatsApp consultation requests -->
+                            <div class="rounded-xl border border-saffron-500/30 bg-cream-100 p-4 text-left">
+                                <p class="text-xs text-slate-700 leading-relaxed mb-3">
+                                    Your name, selected service, date, preferences and any birth details or questions you enter will be included in a WhatsApp message to request a consultation. Please avoid sharing details you do not wish to send. WhatsApp handles messages under its own privacy terms. Submitting a request does not confirm an appointment.
+                                </p>
+                                <label for="booking-privacy" class="flex items-start gap-3 cursor-pointer text-xs text-slate-800 leading-relaxed">
+                                    <input id="booking-privacy" type="checkbox" required class="mt-0.5 h-4 w-4 shrink-0 accent-orange-600" aria-required="true">
+                                    <span>I have read the <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer" class="text-saffron-700 underline font-bold">Privacy Policy</a> and understand that the information I enter will be shared using WhatsApp for my consultation request.</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-saffron-500 to-saffron-600 hover:from-saffron-600 hover:to-saffron-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center space-x-2 text-base">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <span>Send to WhatsApp (9441931386)</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-cream-200 border-t border-saffron-500/30 py-12 text-center text-xs">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="flex items-center justify-center space-x-3">
+                <img src="vedic-maargam-logo.webp" alt="VEDIC MAARGAM logo" class="w-16 h-16 rounded-full bg-cream-100 object-contain" width="64" height="64">
+                <h3 class="heading-font font-bold text-lg text-white">Sridhar Swamy Ch</h3>
+            </div>
+            <p class="text-saffron-400 font-semibold">Certified Vedic Astrologer | Vedic Numerologist</p>
+            <p class="telugu-font text-cream-300">సురవరం ప్రతాపరెడ్డి తెలుగు యూనివర్సిటీ, హైదరాబాద్ (SPRTU)</p>
+            <p class="text-slate-400">Jagtial • Hyderabad • Online & In-person • Contact: 9441931386</p>
+            
+            <div class="flex justify-center space-x-6 pt-2">
+                <a href="https://www.instagram.com/sridharswamychinthamani/" target="_blank" rel="noopener noreferrer" class="text-saffron-400 hover:text-white transition-colors flex items-center space-x-1.5"><i class="fa-brands fa-instagram text-base"></i><span>Sridhar Swamy Instagram</span></a>
+            </div>
+
+            <div class="pt-4 border-t border-saffron-500/20 flex flex-col sm:flex-row justify-between items-center gap-2 text-slate-400">
+                <p>&copy; 2026 Sridhar Swamy Ch. All Rights Reserved. Designed & Developed by ShashiTechVerse.</p>
+                <nav aria-label="Legal links" class="flex flex-wrap justify-center gap-x-5 gap-y-2">
+                    <a href="privacy-policy.html" class="hover:text-saffron-400">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="hover:text-saffron-400">Terms &amp; Conditions</a>
+                    <a href="disclaimer.html" class="hover:text-saffron-400">Astrology Disclaimer</a>
+                    <a href="refund-policy.html" class="hover:text-saffron-400">Refund &amp; Cancellation</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript with XSS Sanitization -->
+    <script>
+        const bookingDateInput = document.getElementById('client-date');
+        if (bookingDateInput) {
+            const today = new Date();
+            const localDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+            bookingDateInput.min = localDate;
+        }
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function switchTab(tabName) {
+            const btnAstrology = document.getElementById('btn-astrology');
+            const btnNumerology = document.getElementById('btn-numerology');
+            const tabAstrology = document.getElementById('tab-astrology');
+            const tabNumerology = document.getElementById('tab-numerology');
+
+            if (tabName === 'astrology') {
+                btnAstrology.className = "px-6 py-2.5 rounded-xl font-bold text-sm bg-saffron-500 text-white transition-all shadow-md";
+                btnNumerology.className = "px-6 py-2.5 rounded-xl font-bold text-sm bg-cream-100 text-slate-900 border border-saffron-500/40 hover:bg-cream-100 transition-all shadow-sm";
+                tabAstrology.classList.remove('hidden');
+                tabNumerology.classList.add('hidden');
+            } else {
+                btnNumerology.className = "px-6 py-2.5 rounded-xl font-bold text-sm bg-saffron-500 text-white transition-all shadow-md";
+                btnAstrology.className = "px-6 py-2.5 rounded-xl font-bold text-sm bg-cream-100 text-slate-900 border border-saffron-500/40 hover:bg-cream-100 transition-all shadow-sm";
+                tabNumerology.classList.remove('hidden');
+                tabAstrology.classList.add('hidden');
+            }
+        }
+
+        function selectServiceForBooking(serviceName) {
+            const select = document.getElementById('service-select');
+            select.value = serviceName;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Selected: ${serviceName}`);
+        }
+
+        // Sanitization helper to prevent XSS attacks in WhatsApp input strings
+        function sanitizeInput(str) {
+            const temp = document.createElement('div');
+            temp.textContent = str;
+            return temp.innerHTML;
+        }
+
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const privacyAcknowledgement = document.getElementById('booking-privacy');
+            if (!privacyAcknowledgement.checked) {
+                privacyAcknowledgement.focus();
+                showToast('Please review and acknowledge the Privacy Policy before continuing.');
+                return;
+            }
+            
+            // Fetch and sanitize raw inputs
+            const rawService = document.getElementById('service-select').value;
+            const rawName = document.getElementById('client-name').value;
+            const rawMode = document.getElementById('consultation-mode').value;
+            const rawDate = document.getElementById('client-date').value;
+            const rawLang = document.getElementById('client-lang').value;
+            const rawMsg = document.getElementById('client-message').value;
+
+            const service = sanitizeInput(rawService);
+            const name = sanitizeInput(rawName);
+            const mode = sanitizeInput(rawMode);
+            const date = sanitizeInput(rawDate);
+            const lang = sanitizeInput(rawLang);
+            const msg = sanitizeInput(rawMsg);
+
+            const whatsappNumber = "919441931386";
+            let text = `Namaste Sridhar Swamy Ji,%0A%0AI would like to book a consultation.%0A%0A*Service:* ${encodeURIComponent(service)}%0A*Name:* ${encodeURIComponent(name)}%0A*Mode:* ${encodeURIComponent(mode)}%0A*Date:* ${encodeURIComponent(date || 'Not specified')}%0A*Language:* ${encodeURIComponent(lang)}`;
+            
+            if (msg.trim() !== "") {
+                text += `%0A*Details/Question:* ${encodeURIComponent(msg)}`;
+            }
+
+            showToast("Opening WhatsApp with your booking details...");
+            setTimeout(() => {
+                window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+            }, 600);
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.textContent = message;
+            toast.classList.remove('translate-y-32', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-32', 'opacity-0');
+            }, 4000);
+        }
+    </script>
+</body>
+</html>

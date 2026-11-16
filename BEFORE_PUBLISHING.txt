@@ -1,0 +1,1 @@
+Upload all 5 HTML pages, vedic-maargam-logo.webp and favicon.png to the same directory. The homepage is index.html. Verify business terms and privacy practices before going live.
